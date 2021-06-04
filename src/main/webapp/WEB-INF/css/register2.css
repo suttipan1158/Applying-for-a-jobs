@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+
+/* From Category Account */
+.frmCetegory
+	{
+		width : 65%;
+		height : 100%;
+		margin-left: auto;
+  		margin-right: auto;
+		border: 2px solid powderblue;
+  		padding: 2%  2%  2%  6% ;
+	}
+
+#exampleRadios1{
+		
+		margin-left:10px;  
+}
+#categoryAccount1{
+	
+		margin-right:20px;
+		padding: 10px 10px 10px 10px;  
+}
+#exampleRadios2{
+		margin-left:20px;
+		padding: 10px 10px 10px 10px;  
+}
+#categoryAccount2{
+		padding: 10px 10px 10px 10px;  
+}
+
+/*  Fieldset css  */
+ .fieldsetCss 
+	{
+		border: 1px solid #ddd !important;
+		margin: 0;
+		xmin-width: 0;
+		padding: 10px;       
+		position: relative;
+		border-radius:4px;
+		background-color:#f5f5f5;
+		padding-left:10px!important;
+	}
+#legendRegister{
+	font-size: 20px;
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<mvc:annotation-driven></mvc:annotation-driven>
+		<context:component-scan base-package="com.springmvc.controller">
+		</context:component-scan>
+		<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		 	<property name="prefix" value="/WEB-INF/jsp/"/>
+		 	<property name="suffix" value=".jsp"/>
+		 </bean>
+		<mvc:resources location="/WEB-INF/css/" mapping="/css/**"></mvc:resources>
+		<!-- mvc:resources for Address -->
+		<mvc:resources location="/WEB-INF/jquery.Thailand.js/database/" mapping="/db/**"></mvc:resources>
+		<!-- mvc:resources for  -->
+		<mvc:resources location="/WEB-INF/Thai-zip-code-latitude-and-longitude-master/" mapping="/latitudeandlongitude/**"></mvc:resources>
+		<mvc:resources location="/WEB-INF/js/" mapping="/js/**"></mvc:resources>
+		<mvc:resources location="/WEB-INF/images/" mapping="/images/**"></mvc:resources>
+		<!-- mvc:resources for Service Person -->
+		<mvc:resources location="/WEB-INF/images/couplePhotoCards/" mapping="/CPCards/**"></mvc:resources> 
+		<mvc:resources location="/WEB-INF/images/idCardsPhoto/" mapping="/idCPhoto/**"></mvc:resources> 
+		<mvc:resources location="/WEB-INF/images/profileImgPerson/" mapping="/PImgPerson/**"></mvc:resources> 
+		<!-- mvc:resources for Company -->
+		<mvc:resources location="/WEB-INF/images/businessLicense/" mapping="/businessLicense/**"></mvc:resources> 
+		<mvc:resources location="/WEB-INF/images/profileImgCompany/" mapping="/PImgCompany/**"></mvc:resources> 
+		
+		<!-- test -->
+		<mvc:resources location="/WEB-INF/js/jstest/" mapping="/jstest/**"></mvc:resources>
+			<mvc:resources location="/WEB-INF/css/csstest/" mapping="/csstest/**"></mvc:resources>
+			<mvc:resources location="/WEB-INF/images/imagestest/" mapping="/imgtest/**"></mvc:resources>
+			<mvc:resources location="/WEB-INF/images/imagestemplate/" mapping="/imgtext/**"></mvc:resources>
+</beans>

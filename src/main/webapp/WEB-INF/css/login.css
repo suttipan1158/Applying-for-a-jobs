@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/* css of div  id=logindiv */
+.logindiv{
+	width: 30%;
+	height: auto;
+	border-radius: 5px;
+  	background-color: #f2f2f2;
+  	padding: 20px;
+  	margin-top: 10%;
+  	margin-left: auto;
+	margin-right: auto;
+}
+/* css of submit */
+.singin {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.singin:hover {
+  background-color: #008CBA;
+  color: white;
+}
+/* css of h3 head form */
+.h3singin{
+	text-align: center;
+	margin-top: 5%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
